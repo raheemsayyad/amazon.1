@@ -224,6 +224,40 @@ ul a {
     margin-top: 10px;
     color: #dddd;
 }
+@media and (max-width: 700px) {
+    .navbar {
+      display: flex; /* Make navbar items stack vertically */
+      flex-direction: column; /* Stack items on top of each other */
+      align-items: center; /* Center items horizontally */
+    }
+    .nav-logo, .address-navbar, .nav-search, .nav-sig, .nav-return, .nav-cart, .panel {
+      flex: 1; /* Distribute available space equally among navigation elements */
+    }
+    .panel {
+      display: none; /* Hide the panel menu on small screens (optional) */
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .shop {
+      display: flex;
+      flex-wrap: wrap; /* Allow boxes to wrap onto multiple lines */
+    }
+    .box1box, .box2box, .box3box, .box4box, .box5box, .box6box, .box7box, .box8box {
+      width: 50%; /* Set width of each box to 50% on smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .foot-p2 {
+      display: flex; /* Make footer links stack horizontally */
+      flex-direction: column; /* Stack links on top of each other */
+    }
+    .foot-p2 ul {
+      margin: 0; /* Remove margin for better alignment */
+      padding: 0; /* Remove padding for better alignment */
+    }
+  }
 
 
 
